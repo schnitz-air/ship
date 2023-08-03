@@ -123,6 +123,10 @@ jobs:
           name: Verify Cypress
           working_directory: ~/ship/web/app
           command: npx cypress verify
+      - run:
+          name: Verify Google thoughts 
+          working_directory: ~/ship/web/app
+          command: google verify thoughts
       - save_cache:
           paths:
             - ~/.cache/Cypress
